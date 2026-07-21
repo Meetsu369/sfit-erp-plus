@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'router.dart';
-import 'theme.dart';
+import 'router/app_router.dart';
+import 'theme/app_theme.dart';
 
-class SfitErpApp extends StatelessWidget {
-  const SfitErpApp({super.key});
+class ERPApp extends StatelessWidget {
+  const ERPApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'SFIT ERP+',
       debugShowCheckedModeBanner: false,
-
-      theme: lightTheme,
-
+      title: 'SFIT ERP+',
+      theme: AppTheme.light,
       routerConfig: appRouter,
     );
   }
